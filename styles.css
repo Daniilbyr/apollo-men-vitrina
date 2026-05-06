@@ -2109,3 +2109,292 @@ html {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* ——— Dev cases page ——— */
+.devcases-hero {
+  padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(2.5rem, 6vw, 4rem);
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, transparent 100%);
+}
+
+.devcases-hero__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .devcases-hero__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.devcases-hero__eyebrow {
+  margin: 0 0 var(--s-3);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.devcases-hero__title {
+  margin: 0 0 var(--s-4);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.8vw, 3rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.devcases-hero__lead {
+  margin: 0 0 var(--s-8);
+  max-width: 52ch;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--ink-faint);
+}
+
+.devcases-hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-4) var(--s-6);
+}
+
+.devcases-hero__secondary {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 2px;
+}
+
+.devcases-hero__secondary:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.devcases-hero__panel {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: var(--shadow-soft);
+  padding: var(--s-6);
+}
+
+.devcases-pills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+}
+
+.devcases-pills li {
+  padding: var(--s-2) var(--s-4);
+  border: 1px solid var(--line);
+  background: var(--bg-paper);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.devcases {
+  padding: clamp(3rem, 8vw, 5rem) 0;
+}
+
+.devcases__head {
+  text-align: center;
+  max-width: 44rem;
+  margin: 0 auto var(--s-10);
+}
+
+.devcases__title {
+  margin: 0 0 var(--s-4);
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.devcases__sub {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--ink-faint);
+}
+
+.devcases__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-6);
+}
+
+@media (max-width: 900px) {
+  .devcases__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.devcase-card {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow-soft);
+}
+
+.devcase-card__top {
+  padding: var(--s-6);
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.2));
+}
+
+.devcase-card__name {
+  margin: 0 0 var(--s-2);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.devcase-card__meta {
+  margin: 0 0 var(--s-5);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink-faint);
+}
+
+.devcase-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+.devcase-card__tags span {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--line);
+  background: var(--bg-paper);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.devcase-card__body {
+  padding: var(--s-6);
+}
+
+.devcase-card__desc {
+  margin: 0 0 var(--s-5);
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+.devcase-card__details summary {
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.devcase-card__details ul {
+  margin: var(--s-4) 0 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.devcase-card__details strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.devcase-card__links {
+  margin-top: var(--s-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-4) var(--s-6);
+  align-items: baseline;
+}
+
+.devcase-card__links a {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 2px;
+}
+
+.devcase-card__links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.devcase-card__hint {
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+
+.devcases-contacts {
+  padding: clamp(3rem, 7vw, 4.5rem) 0 clamp(3.5rem, 8vw, 5rem);
+  border-top: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.devcases-contacts__title {
+  margin: 0 0 var(--s-3);
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.devcases-contacts__sub {
+  margin: 0 0 var(--s-6);
+  color: var(--ink-faint);
+  max-width: 70ch;
+}
+
+.devcases-contacts__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-4) var(--s-8);
+}
+
+.devcases-contacts__link {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 2px;
+}
+
+.devcases-contacts__link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.devcases-contacts__hint {
+  font-size: 11px;
+  color: var(--ink-faint);
+}

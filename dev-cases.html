@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <base href="https://daniilbyr.github.io/apollo-men-vitrina/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eceef1" />
+    <meta name="color-scheme" content="light" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="canonical" href="https://daniilbyr.github.io/apollo-men-vitrina/dev-cases.html" />
+    <title>Кейсы · разработка | Daniilbyr</title>
+    <meta
+      name="description"
+      content="Портфолио: лендинги, Telegram-боты, интеграции и SPA. Кейсы с задачей, решением, стеком и ссылками."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=dev-cases-2026-05-06" />
+  </head>
+  <body class="page">
+    <div class="page-bg" aria-hidden="true">
+      <span class="page-bg__orb page-bg__orb--1"></span>
+      <span class="page-bg__orb page-bg__orb--2"></span>
+      <span class="page-bg__orb page-bg__orb--3"></span>
+      <span class="page-bg__sheen"></span>
+    </div>
+    <a class="skip" href="#main">К содержанию</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <nav class="nav-main" aria-label="Навигация">
+          <a href="./">Демо-витрина</a>
+          <a href="dev-cases.html" aria-current="page">Кейсы</a>
+          <a href="https://github.com/Daniilbyr" rel="noopener noreferrer">GitHub</a>
+        </nav>
+        <a class="logo" href="dev-cases.html" aria-label="На страницу кейсов">
+          <svg class="logo__svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 2L2 20h4.5l1.4-2.8h7.2l1.4 2.8H22L12 2zm0 6.2l3.2 6.4h-6.4L12 8.2z" />
+          </svg>
+          <span class="logo__text">CASES</span>
+        </a>
+        <div class="nav-tools">
+          <a href="#cases" class="nav-tools__link">Список</a>
+          <a href="#contacts" class="nav-tools__link">Контакты</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="devcases-hero" aria-labelledby="hero-heading">
+        <div class="container devcases-hero__inner">
+          <div class="reveal" data-reveal>
+            <p class="devcases-hero__eyebrow">Портфолио разработчика · реальные проекты</p>
+            <h1 id="hero-heading" class="devcases-hero__title">5 кейсов: лендинги, боты, SPA и деплой</h1>
+            <p class="devcases-hero__lead">
+              Каждый кейс — это задача → решение → стек → результат. Без “воды”, с ссылками на репозитории и демо.
+            </p>
+            <div class="devcases-hero__cta">
+              <a class="btn btn--black" href="#cases">Смотреть кейсы</a>
+              <a class="devcases-hero__secondary" href="https://github.com/Daniilbyr" rel="noopener noreferrer">Открыть GitHub</a>
+            </div>
+          </div>
+          <aside class="devcases-hero__panel reveal reveal--delay-1" data-reveal aria-label="Ключевые компетенции">
+            <ul class="devcases-pills" role="list">
+              <li>TypeScript · React</li>
+              <li>Python · Telegram</li>
+              <li>Интеграции · Webhooks</li>
+              <li>Vercel/Pages · Docker</li>
+              <li>UX · конверсия</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="devcases" id="cases" aria-labelledby="cases-heading">
+        <div class="container">
+          <header class="devcases__head reveal" data-reveal>
+            <h2 id="cases-heading" class="devcases__title">Кейсы</h2>
+            <p class="devcases__sub">Ниже — краткие карточки. Внутри каждой — детали, стек и ссылки.</p>
+          </header>
+
+          <div class="devcases__grid">
+            <article class="devcase-card reveal" data-reveal>
+              <div class="devcase-card__top">
+                <h3 class="devcase-card__name">Rent listings bot</h3>
+                <p class="devcase-card__meta">Мониторинг Avito/ЦИАН/Яндекс → уведомления в Telegram</p>
+                <div class="devcase-card__tags" aria-label="Стек">
+                  <span>Python 3.11+</span><span>Telegram Bot API</span><span>SQLite</span><span>Docker</span>
+                </div>
+              </div>
+              <div class="devcase-card__body">
+                <p class="devcase-card__desc">
+                  Бот опрашивает выдачи, дедуплицирует объявления, отправляет сообщения в разные каналы (жилая/коммерция),
+                  умеет работать через прокси и поддерживает backoff при ограничениях площадок.
+                </p>
+                <details class="devcase-card__details">
+                  <summary>Показать детали</summary>
+                  <ul>
+                    <li><strong>Фишки:</strong> раздельные пулы прокси по источникам, флаги сегментов, диагностические скрипты.</li>
+                    <li><strong>Результат:</strong> автоматизация мониторинга аренды и оперативные уведомления.</li>
+                  </ul>
+                </details>
+                <div class="devcase-card__links">
+                  <a href="https://github.com/Daniilbyr" rel="noopener noreferrer">GitHub профиль</a>
+                  <span class="devcase-card__hint">репозиторий: локально `rent-listings-bot/`</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="devcase-card reveal reveal--delay-1" data-reveal>
+              <div class="devcase-card__top">
+                <h3 class="devcase-card__name">Traffic landing demo</h3>
+                <p class="devcase-card__meta">Статический лендинг под рекламный трафик</p>
+                <div class="devcase-card__tags" aria-label="Стек">
+                  <span>HTML</span><span>CSS</span><span>JS</span><span>Яндекс.Метрика</span><span>GitHub Pages</span>
+                </div>
+              </div>
+              <div class="devcase-card__body">
+                <p class="devcase-card__desc">
+                  Шаблон “оффер → доверие → заявка”: mobile-first, липкий CTA на мобильных, заготовка под цели Метрики и события.
+                  Можно быстро клонировать и запускать гипотезы.
+                </p>
+                <details class="devcase-card__details">
+                  <summary>Показать детали</summary>
+                  <ul>
+                    <li><strong>Фишки:</strong> якорная навигация, UX формы, цели `reachGoal`.</li>
+                    <li><strong>Результат:</strong> быстрый запуск лендинга и аналитики под трафик.</li>
+                  </ul>
+                </details>
+                <div class="devcase-card__links">
+                  <a href="https://github.com/Daniilbyr/landing-traffic-demo" rel="noopener noreferrer">Репозиторий</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="devcase-card reveal reveal--delay-2" data-reveal>
+              <div class="devcase-card__top">
+                <h3 class="devcase-card__name">Warehouse demo (SPA + Electron)</h3>
+                <p class="devcase-card__meta">Учёт склада, услуг и отчёты с экспортом</p>
+                <div class="devcase-card__tags" aria-label="Стек">
+                  <span>React 19</span><span>TypeScript</span><span>Vite</span><span>Tailwind</span><span>Electron</span>
+                </div>
+              </div>
+              <div class="devcase-card__body">
+                <p class="devcase-card__desc">
+                  Веб-приложение: склад (приход/расход, минимальные остатки), заказы со списанием, услуги по сотрудникам,
+                  отчёты с периодами и экспорт CSV для Excel. Данные — в localStorage (без бэкенда).
+                </p>
+                <details class="devcase-card__details">
+                  <summary>Показать детали</summary>
+                  <ul>
+                    <li><strong>Фишки:</strong> KPI дашборд, графики, Ctrl+K поиск, undo/redo операций, тёмная/светлая тема.</li>
+                    <li><strong>Результат:</strong> демо, которое можно показать заказчику как “готовый продукт”.</li>
+                  </ul>
+                </details>
+                <div class="devcase-card__links">
+                  <a href="https://github.com/Daniilbyr" rel="noopener noreferrer">GitHub профиль</a>
+                  <span class="devcase-card__hint">проект: локально `warehouse-demo/`</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="devcase-card reveal" data-reveal>
+              <div class="devcase-card__top">
+                <h3 class="devcase-card__name">Demo bot cases</h3>
+                <p class="devcase-card__meta">Набор MVP Telegram-ботов для демонстрации клиентам</p>
+                <div class="devcase-card__tags" aria-label="Стек">
+                  <span>Python</span><span>Telegram</span><span>Webhooks</span><span>Google Sheets (mock)</span>
+                </div>
+              </div>
+              <div class="devcase-card__body">
+                <p class="devcase-card__desc">
+                  Три демо-бота: квалификация лидов + “платёж”, сегментация и рассылка, интеграция в CRM/таблицы через вебхук.
+                  Есть PowerShell-скрипты запуска всех демо.
+                </p>
+                <details class="devcase-card__details">
+                  <summary>Показать детали</summary>
+                  <ul>
+                    <li><strong>Фишки:</strong> безопасные интеграции “для презентации”, быстрый старт через `.env`.</li>
+                    <li><strong>Результат:</strong> готовые живые демо для продаж разработки ботов.</li>
+                  </ul>
+                </details>
+                <div class="devcase-card__links">
+                  <a href="https://github.com/Daniilbyr" rel="noopener noreferrer">GitHub профиль</a>
+                  <span class="devcase-card__hint">папка: локально `demo-bot-cases/`</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="devcase-card reveal reveal--delay-1" data-reveal>
+              <div class="devcase-card__top">
+                <h3 class="devcase-card__name">Apollo men vitrina</h3>
+                <p class="devcase-card__meta">Демо eCommerce-витрина: каталог → карточка товара → UX детали</p>
+                <div class="devcase-card__tags" aria-label="Стек">
+                  <span>HTML</span><span>CSS</span><span>JS</span><span>GitHub Pages</span>
+                </div>
+              </div>
+              <div class="devcase-card__body">
+                <p class="devcase-card__desc">
+                  Премиальная витрина: категории, карточки товаров, PDP с вариациями (объём/концентрация),
+                  аккордеон, липкая CTA на мобилке, оптимизации под “не пусто без JS”.
+                </p>
+                <details class="devcase-card__details">
+                  <summary>Показать детали</summary>
+                  <ul>
+                    <li><strong>Фишки:</strong> аккуратная типографика, анимации с reduce-motion, адаптив.</li>
+                    <li><strong>Результат:</strong> демо, которое можно показывать как “витрину уровня бренда”.</li>
+                  </ul>
+                </details>
+                <div class="devcase-card__links">
+                  <a href="./">Открыть демо</a>
+                  <a href="https://github.com/Daniilbyr/apollo-men-vitrina" rel="noopener noreferrer">Репозиторий</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="devcases-contacts" id="contacts" aria-labelledby="contacts-heading">
+        <div class="container reveal" data-reveal>
+          <h2 id="contacts-heading" class="devcases-contacts__title">Контакты</h2>
+          <p class="devcases-contacts__sub">
+            Если нужно быстро собрать MVP (бот/лендинг/интеграция) — можно обсудить задачи и сроки.
+          </p>
+          <div class="devcases-contacts__row">
+            <a class="devcases-contacts__link" href="https://github.com/Daniilbyr" rel="noopener noreferrer">GitHub: @Daniilbyr</a>
+            <span class="devcases-contacts__hint">Telegram/почту добавишь сюда, когда решишь</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--editorial">
+      <div class="container">
+        <p class="footer-copy">© 2026 · Dev cases · страница для демонстрации портфолио</p>
+      </div>
+    </footer>
+
+    <script src="app.js?v=dev-cases-2026-05-06" defer></script>
+  </body>
+</html>
+
